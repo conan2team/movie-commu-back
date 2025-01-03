@@ -14,4 +14,5 @@
 
 | **Endpoint**             | **Method** | **Description**                          | **Request Parameters**         | **Response**                                                                      |
 |--------------------------|------------|------------------------------------------|--------------------------------|-----------------------------------------------------------------------------------|
-| `/userManage`            | `GET`      | 사용자 관리 정보 조회                    | `size` (int), `page` (int)     | **Response Body**: `UserPageResponseDto` 객체 반환 <br> 포함된 데이터: `userCnt` (총 사용자 수), `users` (사용자 목록) |
+| `/admin/userManage`            | `GET`      | 사용자 관리 정보 조회                    | `size` (int), `page` (int)     | **Response Body**: `UserPageResponseDto` 객체 반환 <br> 포함된 데이터: `userCnt` (총 사용자 수), `users` (사용자 목록) |
+| `/admin/join`        | `POST`       | 관리자 계정을 생성 | `username` (String), `password` (String) | `200 OK`: `"joined"` 반환 <br> `400 Bad Request`: `"join failed"` 반환                  |
