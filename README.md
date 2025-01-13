@@ -147,3 +147,5 @@
 
 # 시연영상
 
+[시연 영상 바로가기](https://youtu.be/ksvS9sRr5iM)
+
